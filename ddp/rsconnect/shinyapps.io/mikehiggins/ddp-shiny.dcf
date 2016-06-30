@@ -1,0 +1,9 @@
+name: ddp-shiny
+account: mikehiggins
+server: shinyapps.io
+appId: 111554
+bundleId: 492995
+url: https://mikehiggins.shinyapps.io/ddp-shiny/
+when: 1467258755.2055
+asMultiple: FALSE
+asStatic: FALSE

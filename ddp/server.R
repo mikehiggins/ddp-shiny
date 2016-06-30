@@ -11,7 +11,7 @@ library(shiny)
 
 # load data from csv file
 # Original data source https://data.gov.hk/en-data/dataset/hk-dh-dh_ncdd-ncdd-birth-ratencdd/resource/63154e6f-9723-4fcf-bae2-9aa0c20a2a78
-births <- read.csv("../data/births-by-year.csv")
+births <- read.csv("data/births-by-year.csv")
 
 # Convert to numeric
 births$Male.Births <- as.numeric(births$Male.Births)
