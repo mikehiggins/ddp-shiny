@@ -23,12 +23,16 @@ shinyUI(fluidPage(
                    min = 1961,
                    max = 2014,
                    value = 1980,
-                   sep="")
+                   sep=""),
+       h4("How to use this app"),
+       p("The plot shows the numbers of female and male births per year. Drag the slider to update the
+         plot and see how the ratio changes from one year to the next.")
     ),
     
     # Show a plot of the generated distribution
     mainPanel(
-       plotOutput("barPlot")
+       plotOutput("barPlot"),
+       p("Data source: Hong Kong Government Data.One Portal - https://goo.gl/F9XJtN")
     )
   )
 ))

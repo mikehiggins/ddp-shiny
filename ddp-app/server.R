@@ -25,13 +25,19 @@ shinyServer(function(input, output) {
     # subset values based on input$year from ui.R
     x <- subset(births, births$Year == input$year)
     
+    plotData <- c(x$Female.Births, x$Male.Births)
+    #format(plotData, scientific=FALSE)
+    
+    options(scipen=5)
+    
     # draw the barplot with values from the select year
-    barplot(c(x$Female.Births, x$Male.Births),
+    barplot(plotData,
             names.arg = c("Female", "Male"),
             ylim = c(0,100000),
             xlab = "Gender",
             ylab = "No. of births",
-            col = c("blue", "green"))
+            col = c("blue", "green"),
+            cex.axis = 1.2)
     
   })
   
